@@ -1,6 +1,6 @@
 # Retroracle
 
-![preview image](/manifest/preview.png)
+![preview image](/src/manifest/preview.png)
 
 A Pen created on CodePen.io. Original URL: [https://codepen.io/EndingTransmission/pen/JvgdPY](https://codepen.io/EndingTransmission/pen/JvgdPY).
 
