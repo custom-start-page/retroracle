@@ -8,6 +8,11 @@
       "title": "Background URL",
       "description": "Link to the image you want displayed in the background"
     },
+    "imageWindowImageUrl": {
+      "type": "string",
+      "title": "Image Window Image Url",
+      "description": "Link to the image you want displayed in the right window"
+    },
     "linkGroups": {
       "type": "array",
       "title": "Link Groups",
@@ -16,6 +21,11 @@
         "type": "object",
         "title": "Link Group",
         "properties": {
+          "name": {
+              "type": "string",
+              "title": "Group Name",
+              "description": "Give the group a name that will appear at the title of this group of links"
+          },
           "links": {
             "type": "array",
             "title": "Links",
@@ -40,6 +50,29 @@
                 }
               }
             }
+          }
+        }
+      }
+    },
+    "userInformation": {
+      "type": "array",
+      "title": "User Information",
+      "description": "This information displays on the right of the window, under the image",
+      "items": {
+        "type": "object",
+        "title": "Group",
+        "required": [
+          "key",
+          "value"
+        ],
+        "properties": {
+          "key": {
+            "type": "string",
+            "title": "Key"
+          },
+          "value": {
+            "type": "string",
+            "title": "Value"
           }
         }
       }

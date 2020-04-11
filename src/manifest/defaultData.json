@@ -1,81 +1,87 @@
 {
-  "linkGroups": [
+ "linkGroups": [
+  {
+   "name": "social",
+   "links": [
     {
-      "links": [
-        {
-          "name": "Localhost",
-          "url": "http://localhost:3000"
-        }
-      ]
+     "name": "discord",
+     "url": "https://discordapp.com/"
     },
     {
-      "links": [
-        {
-          "name": "Translate",
-          "url": "https://translate.google.com"
-        },
-        {
-          "name": "Maps",
-          "url": "https://google.co.uk/maps"
-        }
-      ]
+     "url": "https://arisuchan.jp/",
+     "name": "arisuchan"
     },
     {
-      "links": [
-        {
-          "name": "YouTube",
-          "url": "https://www.youtube.com"
-        },
-        {
-          "name": "Netflix",
-          "url": "https://www.netflix.com/browse"
-        },
-        {
-          "name": "Spotify",
-          "url": "https://open.spotify.com"
-        }
-      ]
+     "name": "lainchan",
+     "url": "https://lainchan.org/"
     },
     {
-      "links": [
-        {
-          "name": "Feedly",
-          "url": "https://feedly.com/i/latest"
-        },
-        {
-          "name": "Toggl",
-          "url": "https://www.toggl.com/app/timer"
-        },
-        {
-          "name": "Trello",
-          "url": "https://trello.com"
-        }
-      ]
-    },
-    {
-      "links": [
-        {
-          "name": "GitHub",
-          "url": "https://github.com"
-        },
-        {
-          "name": "Stack Overflow",
-          "url": "https://stackoverflow.com"
-        }
-      ]
-    },
-    {
-      "links": [
-        {
-          "name": "CoinLib",
-          "url": "https://coinlib.io"
-        },
-        {
-          "name": "CoinMarketCap",
-          "url": "https://coinmarketcap.com"
-        }
-      ]
+     "name": "twitter",
+     "url": "https://twitter.com/"
     }
-  ],
-  "backgroundUrl": "https://images.unsplash.com/photo-1492627223639-6e980361988c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80"
+   ]
+  },
+  {
+   "name": "entertainment",
+   "links": [
+    {
+     "url": "https://www.youtube.com",
+     "name": "youtube"
+    },
+    {
+     "url": "https://www.twitch.tv",
+     "name": "twitch"
+    },
+    {
+     "url": "https://www.plex.com",
+     "name": "plex"
+    },
+    {
+     "url": "https://www.netflix.com",
+     "name": "netflix"
+    },
+    {
+     "url": "https://www.nreboot.com/",
+     "name": "nreboot"
+    }
+   ]
+  },
+  {
+   "name": "code",
+   "links": [
+    {
+     "url": "https://www.github.com/",
+     "name": "github"
+    },
+    {
+     "url": "https://www.codepen.io/",
+     "name": "codepen"
+    },
+    {
+     "name": "mozilla dev",
+     "url": "https://developer.mozilla.org/"
+    },
+    {
+     "name": "devdocs",
+     "url": "http://devdocs.io/"
+    }
+   ]
+  }
+ ],
+ "userInformation": [
+    {
+     "key": "User",
+     "value": "orion"
+    },
+    {
+     "key": "Account Created",
+     "value": "Aug 1998"
+    },
+    {
+     "key": "Bio",
+     "value": "what is good"
+    }
+ ],
+ "backgroundUrl": "images/circling-ball-black-back.gif",
+ "imageWindowImageUrl": "https://pbs.twimg.com/media/DJeR25oXoAIhkVq.jpg"
 }
