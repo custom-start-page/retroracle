@@ -1,0 +1,13 @@
+{
+    "name": "Retroracle",
+    "slug": "retroracle",
+    "author": {
+        "name": "EndingTransmission",
+        "link": "https://codepen.io/EndingTransmission/"
+    },
+    "preview": "preview.jpg",
+    "features": [
+        "background",
+        "links"
+    ]
+}
