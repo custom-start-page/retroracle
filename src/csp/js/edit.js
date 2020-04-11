@@ -14,23 +14,48 @@ async function getSchema() {
   });
 }
 
-const submit = data => {
-  console.log('submit', data);
-  storage.set(data.formData);
-  window.parent.reloadPreview();
-};
-
 const del = () => {
   storage.delete();
   window.parent.reloadPreview();
 };
 
+const isPreview = () => {
+  return typeof window.parent.reloadPreview !== 'undefined';
+};
+
 async function render() {
-  const formData = await storage.get();
+  const originalFormData = await storage.get();
   const schema = await getSchema();
+  let formData = null;
+
+  let formAction = function () {
+    console.error('No action set.');
+  };
+
+  const previewButton = isPreview() ? React.createElement("button", {
+    className: "btn btn-success",
+    onClick: () => {
+      formAction = saveAndUpdatePreview;
+    }
+  }, "Save and update preview") : '';
+
+  const submit = data => {
+    formData = data.formData;
+    storage.set(formData);
+    console.log(formData);
+    alert('Saved!');
+    formAction();
+  };
+
+  const saveAndUpdatePreview = () => {
+    window.parent.reloadPreview();
+  };
+
+  const save = () => {};
+
   ReactDOM.render(React.createElement(Form, {
     schema: schema,
-    formData: formData // onChange={log("changed")}
+    formData: originalFormData // onChange={log("changed")}
     ,
     onSubmit: submit // onError={log("errors")}
 
@@ -38,14 +63,18 @@ async function render() {
     className: "sticky-footer"
   }, React.createElement("div", {
     className: "container "
+  }, previewButton, React.createElement("div", {
+    class: "pull-right"
   }, React.createElement("button", {
-    className: "btn btn-success"
-  }, "Save and update preview"), React.createElement("button", {
-    className: "btn btn-warning pull-right",
+    className: "btn btn-primary",
     onClick: () => {
-      window.parent.location = '/';
+      formAction = save;
     }
-  }, "Save and view result")))), document.getElementById("form"));
+  }, "Save"), "\xA0", React.createElement("a", {
+    href: "/",
+    target: "_blank",
+    class: "btn btn-warning"
+  }, "View start page"))))), document.getElementById("form"));
 }
 
 render();
