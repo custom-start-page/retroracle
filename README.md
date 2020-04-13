@@ -1,3 +1,5 @@
+https://github.com/custom-start-page/retroracle
+
 # Retroracle
 
 *(retro-oracle)*
@@ -35,3 +37,13 @@ For local development, you can use a development web server such as:
 - IIS, WAMP, etc
 
 Just open a terminal in the `/src` directory and run the web server.
+
+## Packaging
+
+Run:
+
+```
+dist.sh
+```
+
+This will create a `/dist` folder which can be zipped and released.
