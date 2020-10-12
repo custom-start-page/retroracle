@@ -24,7 +24,7 @@ Found via a Reddit post: https://www.reddit.com/r/startpages/comments/d5a479/my_
 
 This startpage needs to be hosted by a web server in order to work.
 
-It's already hosted at https://win95.customstart.page for your convenience.
+It's already hosted at https://retroracle.customstart.page for your convenience.
 
 ### Self host
 
